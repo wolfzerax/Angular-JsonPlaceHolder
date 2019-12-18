@@ -1,0 +1,22 @@
+<nav class=" navbar navbar-dark bg-primary justify-content-between">
+    <a class="navbar-brand">Navbar</a>
+    <div class="form-inline">
+      <input class="form-control mr-sm-2" type="number" placeholder="Search" aria-label="Search" [(ngModel)]="busca">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="procurar()">Search</button>
+    </div>
+  </nav>
+    
+<!--<input type="number" [(ngModel)]="busca">
+<button (click)="procurar()">Procurar</button>-->
+
+<div *ngIf='listaTarefas'>
+  <div class="card tamanho">
+  <div class="card-body">
+        {{listaTarefas.id}} 
+    {{listaTarefas.userId}}
+     {{listaTarefas.title}} <br>
+     {{listaTarefas.completed}}<br>
+    </div>
+    </div>
+     
+</div>
